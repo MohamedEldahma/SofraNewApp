@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/RestaurantFragmentIvComponent"
+        android:layout_width="@dimen/dim_120"
+        android:layout_height="@dimen/dim_120"
+        app:srcCompat="@android:drawable/ic_menu_mapmode"
+        android:layout_marginTop="@dimen/dim_8"/>
+
+    <TextView
+        android:id="@+id/RestaurantFragmentTvComponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/dim_8"
+        android:textColor="@color/red50"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_size_12"
+        android:layout_marginTop="@dimen/dim_8"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/RestaurantFragmentTabLayoutComponent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabSelectedTextColor="@color/dark"
+        app:tabTextColor="@color/dark"
+        tools:ignore="MissingConstraints"
+
+        />
+    <!--
+    android:layoutDirection="rtl"
+     -->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/requestRestaurantFragmentViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

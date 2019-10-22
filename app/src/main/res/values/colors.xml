@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="colorPrimary">#ECECEC</color>
+    <color name="colorPrimaryDark">#AF124C</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="not_color">#00FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white100">#ECECEC</color>
+    <color name="dark">#000</color>
+    <color name="dark500">#2E2E2E</color>
+    <color name="dark600">#222222</color>
+    <color name="dark700">#161515</color>
+    <color name="dark800">#141414</color>
+    <color name="dark900">#000</color>
+    <color name="gray">#C49C9C9C</color>
+    <color name="gray00">#00FFFFFF</color>
+
+    <color name="gray100">#E2E1E1</color>
+    <color name="gray200">#E4E4E4</color>
+    <color name="gray77">#BBBBBB</color>
+    <color name="color_tab_bar_select">#02082E</color>
+    <color name="color_tab_bar_line_select">#061052</color>
+    <color name="color_tab_bar_unsSelect">#F3F3F3</color>
+    <color name="green100">#00F878</color>
+    <color name="green200">#01B329</color>
+    <color name="green300">#06AF58</color>
+    <color name="green400">#00A550</color>
+    <color name="green500">#027E3E</color>
+    <color name="green600">#08753D</color>
+    <color name="green700">#046D38</color>
+
+    <color name="dark_blue100">#2F0D4E</color>
+    <color name="dark_blue200">#07104D</color>
+    <color name="dark_blue300">#02082E</color>
+
+    <color name="blue">#334DEB</color>
+    <color name="red50">#F74D4D</color>
+    <color name="red100">#EB0432</color>
+    <color name="red200">#F7F00000</color>
+    <color name="red300">#CC0000</color>
+    <color name="red400">#EB0432</color>
+    <color name="red500">#EB0432</color>
+    <color name="red700">#9F0A4A</color>
+    <color name="red_lite">#D32750</color>
+
+    <color name="background_tool_bar">#F4F4F4</color>
+    <color name="pink">#F85073</color>
+
+</resources>

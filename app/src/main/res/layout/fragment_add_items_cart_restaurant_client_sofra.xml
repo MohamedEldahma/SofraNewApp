@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:ignore="ContentDescription"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dim_24"
+        android:paddingTop="@dimen/dim_24"
+        android:paddingEnd="@dimen/dim_24">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/showItemRestaurantFragmentClientCvContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_162"
+
+                android:layout_marginTop="@dimen/dim_8"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="@dimen/dim_28"
+                app:cardElevation="@dimen/dim_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/showItemRestaurantFragmentClientIvPhotoItems"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/txt_size_20"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cardView6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_104"
+                android:layout_below="@+id/showItemRestaurantFragmentClientCvContainer"
+                android:layout_alignStart="@+id/showItemRestaurantFragmentClientCvContainer"
+                android:layout_alignEnd="@+id/showItemRestaurantFragmentClientCvContainer"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="-24dp"
+                android:layout_marginEnd="-1dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/dim_32"
+                app:cardElevation="@dimen/dim_1"
+                app:layout_constraintEnd_toEndOf="@+id/showItemRestaurantFragmentClientCvContainer"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/showItemRestaurantFragmentClientCvContainer"
+                app:layout_constraintTop_toTopOf="@+id/showItemRestaurantFragmentClientCvContainer">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="@dimen/dim_24"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/showItemRestaurantFragmentClientTxvNameItems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/items"
+                        android:textColor="@color/red400"
+                        android:textSize="@dimen/txt_size_12" />
+
+                    <TextView
+                        android:id="@+id/showItemRestaurantFragmentClientTxvDetailsItems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/items"
+                        android:textColor="@color/dark500"
+                        android:textSize="@dimen/txt_size_8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/dim_8"
+                            android:src="@drawable/icon_cost" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/dim_8"
+                            android:text="@string/price"
+                            android:textColor="@color/dark500" />
+
+                        <TextView
+                            android:id="@+id/showItemRestaurantFragmentClientTxvPriceItems"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/dim_8"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/showItemRestaurantFragmentClientTxvOffersPriceItems"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView6"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/dim_56">
+
+
+                <TextView
+                    android:id="@+id/showItemRestaurantFragmentClientTvPreparingTimeItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dim_8"
+                    android:text="@string/time"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/txt_size_12" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_1"
+                    android:background="@color/gray77" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:text="@string/private_order"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/txt_size_12" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_104"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/dim_32"
+                    app:cardElevation="@dimen/dim_1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="@dimen/dim_24"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/showItemRestaurantFragmentClientEtPrivateOrderItems"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:paddingStart="@dimen/dim_8"
+                            android:hint="@string/details"
+                            android:textColor="@color/dark500"
+                            android:textSize="@dimen/txt_size_12" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_1"
+                    android:background="@color/gray77"
+                    android:layout_marginTop="@dimen/dim_8"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                     android:layout_marginTop="@dimen/dim_8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quantity" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_8"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/dim_32"
+                        app:cardElevation="@dimen/dim_1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/showItemRestaurantFragmentClientImgSubtractItems"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dim_8"
+                                android:src="@drawable/icon_subtract"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+
+
+                        android:layout_width="@dimen/dim_104"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_8"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/dim_8"
+                        app:cardElevation="@dimen/dim_1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/showItemRestaurantFragmentClientTvQuantityItems"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/_1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_8"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/dim_32"
+                        app:cardElevation="@dimen/dim_1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/showItemRestaurantFragmentClientImgPlusItems"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dim_8"
+                                app:srcCompat="@drawable/icon_plus" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/showItemRestaurantFragmentClientImgAddItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_24"
+                    android:layout_marginBottom="@dimen/dim_24"
+                    app:srcCompat="@drawable/icon_cart" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

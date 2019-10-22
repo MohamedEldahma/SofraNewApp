@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/not_color"
+    app:cardElevation="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/setAdapterItemsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/gray77"
+        app:cardCornerRadius="@dimen/dim_28"
+        app:cardElevation="0dp"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_24">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:text="@string/choose_the_rate"
+                android:textColor="@color/dark" />
+
+
+            <com.example.sofranewapp.helper.EmojiRatingBar
+                android:id="@+id/commentDialogRestaurantClientRatingBarComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_l6"
+
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_l6"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/dim_28"
+                app:cardElevation="0dp">
+
+                <EditText
+                    android:id="@+id/commentDialogRestaurantClientEtDetailsComment"
+                    android:layout_width="@dimen/dim_250"
+                    android:layout_height="@dimen/dim_170"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/add_comment_here"
+                    android:padding="@dimen/dim_24"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/txt_size_12" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/commentDialogRestaurantClientBtnAddComment"
+                android:layout_width="@dimen/dim_128"
+                android:layout_height="@dimen/dim_32"
+                android:layout_marginTop="@dimen/dim_8"
+                android:layout_marginBottom="@dimen/dim_8"
+                android:background="@drawable/shape_btn"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_8" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

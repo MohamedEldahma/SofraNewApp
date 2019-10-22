@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription,ButtonStyle,UnusedAttribute,DisableBaselineAlignment"
+    android:paddingStart="@dimen/dim_8"
+    android:paddingEnd="@dimen/dim_8"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/setAdapterNewOrdersItemsCardView"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_4"
+        android:layout_marginEnd="@dimen/dim_4"
+        android:layout_marginBottom="@dimen/dim_l2"
+        app:cardBackgroundColor="@color/gray200"
+        app:cardCornerRadius="@dimen/dim_28">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim_8"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dim_80"
+                    android:layout_height="@dimen/dim_56"
+                    android:layout_marginEnd="@dimen/dim_l6"
+                    android:background="@drawable/shape_background_blood"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+                    app:layout_constraintHorizontal_bias="0.352"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.515">
+
+                    <ImageView
+                        android:id="@+id/setAdapterNewOrdersImgClientPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_user"
+                        android:textSize="@dimen/txt_size_20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/setAdapterNewOrdersNameClientTxv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_4"
+                        android:text="@string/_0_0"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/txt_size_16" />
+
+                    <TextView
+                        android:id="@+id/setAdapterNumberOrdersTxv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_client"
+                        android:textColor="@color/red50"
+                        android:textSize="@dimen/txt_size_8" />
+
+                    <TextView
+                        android:id="@+id/setAdapterNewOrdersTotalClientTxv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total"
+                        android:textColor="@color/red50"
+                        android:textSize="@dimen/txt_size_8" />
+
+
+                    <TextView
+                        android:id="@+id/setAdapterNewOrdersAddressClientTxv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:text="@string/address"
+                        android:textColor="@color/red50"
+                        android:textSize="@dimen/txt_size_8" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/setAdapterNewOrdersBtnClient"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                     android:paddingStart="@dimen/dim_l6"
+                    android:paddingEnd="@dimen/dim_l6"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_12"
+                    android:layout_marginEnd="@dimen/dim_32"
+                    android:layout_marginStart="@dimen/dim_32"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.resturant.MainRestaurant"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar_sofra"
+        android:id="@+id/include_tool_bar"
+        />
+
+    <LinearLayout
+        android:id="@+id/mainClientReplaceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/include_tool_bar"
+
+        />
+
+    <include
+        android:id="@+id/bottom_navigation_view"
+        layout="@layout/bottom_navigation_view_sofra"/>
+
+</RelativeLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dim_28"
+    tools:ignore="ContentDescription,SpUsage,UnusedAttribute,ButtonStyle,Autofill,TextFields">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dim_72"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_details"
+                    android:textColor="@color/dark_blue100"
+                    android:textSize="@dimen/txt_size_12"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_162"
+                android:layout_marginTop="@dimen/dim_8"
+                app:cardBackgroundColor="@color/gray200"
+                app:cardCornerRadius="@dimen/dim_l6">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <EditText
+                        android:id="@+id/confirmOrderDetailsRestaurantFragmentClientEtNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/note"
+                        android:padding="@dimen/dim_8"
+                        android:textSize="@dimen/txt_size_16"
+                       />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:text="@string/delivery_address"
+                    android:textColor="@color/dark" />
+
+
+
+
+
+                <EditText
+                    android:id="@+id/confirmOrderDetailsRestaurantFragmentClientTvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:text="@string/address"
+                    android:textColor="@color/red300"
+                    android:background="@null"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:text="@string/pay"
+                    android:textColor="@color/dark500" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pay_online"
+                        android:gravity="center"
+                        android:textColor="@color/dark_blue100"
+                        android:textSize="@dimen/dim_8"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cash_on_delivery"
+                        android:gravity="center"
+                        android:textColor="@color/dark_blue100"
+                        android:textSize="@dimen/dim_8"
+                        android:layout_weight="1"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/confirmOrderDetailsRestaurantFragmentClientRgContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:orientation="horizontal"
+                    android:text="@string/address"
+                    android:textColor="@color/red300"
+                    android:gravity="center"
+                    >
+
+
+
+
+                            <RadioButton
+                                android:id="@+id/confirmOrderDetailsRestaurantFragmentClientRbPayOnline"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                 android:button="@drawable/radio_button_selector"
+                                android:background="@drawable/shape_background_radios"
+                                 android:layout_marginEnd="@dimen/dim_154"
+                                />
+
+                    <RadioButton
+                        android:id="@+id/confirmOrderDetailsRestaurantFragmentClientRbCash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_gravity="center"
+                        android:button="@drawable/radio_button_selector"
+                        android:background="@drawable/shape_background_radios"
+                        android:padding="@dimen/dim_4"/>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_l6"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/dim_8">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:padding="@dimen/dim_8"
+                            android:text="@string/total"
+                            android:textSize="@dimen/txt_size_16" />
+
+                        <TextView
+                            android:id="@+id/confirmOrderDetailsRestaurantFragmentClientTvTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="@string/_0_0"
+                            android:padding="@dimen/dim_8"
+                            android:textSize="@dimen/txt_size_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:padding="@dimen/dim_8"
+                            android:text="@string/delivery_cost"
+                            android:textSize="@dimen/txt_size_16" />
+
+                        <TextView
+                            android:id="@+id/confirmOrderDetailsRestaurantFragmentClientTvDeliveryCost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="@string/_0_0"
+                            android:padding="@dimen/dim_8"
+                            android:textSize="@dimen/txt_size_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:padding="@dimen/dim_8"
+                            android:text="@string/total_amount"
+                            android:textSize="@dimen/txt_size_16" />
+
+                        <TextView
+                            android:id="@+id/confirmOrderDetailsRestaurantFragmentClientTvTotalAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="@string/_0_0"
+                            android:padding="@dimen/dim_8"
+                            android:textSize="@dimen/txt_size_16" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+
+                <Button
+                    android:id="@+id/confirmOrderDetailsRestaurantFragmentClientBtnConfirm"
+                    android:layout_width="@dimen/dim_154"
+                    android:layout_height="@dimen/dim_32"
+                     android:background="@drawable/shape_btn"
+                     android:text="@string/confirm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_12"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/showOrderRestaurantFragmentItemProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView3"
+        app:layout_constraintStart_toStartOf="@+id/scrollView3"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

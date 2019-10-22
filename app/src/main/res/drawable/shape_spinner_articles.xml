@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape  >
+                    <corners android:radius="@dimen/dim_24"/>
+
+                    <padding
+                        android:left="4dp"
+                        android:top="4dp"
+                        android:right="4dp"
+                        android:bottom="4dp"
+                        />
+                    <gradient android:endColor="#F7F5F5" android:startColor="#FAF9F9"/>
+
+                  </shape>
+            </item>
+
+            <item>
+
+             <!--   <bitmap android:gravity="right" android:src="@drawable/icon_menu_spinner" />
+-->
+            </item>
+
+        </layer-list>
+    </item>
+
+</selector>

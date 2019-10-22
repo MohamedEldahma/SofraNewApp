@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RtlSymmetry,UnusedAttribute" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loginActivityConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/loginbackfround"
+        android:padding="@dimen/txt_size_32"
+        android:layout_alignBottom="@+id/loginActivityBtnRegister">
+
+        <TextView
+            android:id="@+id/loginActivityImgIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dim_28"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/loginActivityEditUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/txt_size_44"
+            android:layout_marginTop="@dimen/txt_size_32"
+             android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/dim_8"
+            android:textColorHint="@color/dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginActivityImgIcon"
+            android:drawableStart="@drawable/icon_email"
+            android:drawableTint="@color/white"
+            android:drawablePadding="@dimen/dim_4"
+/>
+
+        <EditText
+            android:id="@+id/loginActivityEditUserPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/txt_size_44"
+            android:layout_marginTop="@dimen/dim_l6"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/dim_8"
+            android:textColorHint="@color/dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginActivityEditUserEmail"
+            android:drawableStart="@drawable/icon_password"
+            android:drawableTint="@color/white"
+            android:drawablePadding="@dimen/dim_4"
+            />
+
+        <Button
+            android:id="@+id/loginActivityBtnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_28"
+            android:background="@drawable/shape_btn"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginActivityChkBox" />
+
+        <TextView
+            android:id="@+id/loginActivityTxtForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/forget_password"
+            android:textSize="@dimen/txt_size_12"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/loginActivityChkBox"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginActivityEditUserPassword"
+            android:padding="@dimen/dim_4"/>
+
+        <CheckBox
+            android:id="@+id/loginActivityChkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:text="@string/remember_me"
+            android:textSize="@dimen/txt_size_8"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/loginActivityEditUserPassword"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/loginActivityEditUserPassword" />
+
+        <ProgressBar
+            android:id="@+id/loginActivityProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/loginActivityBtnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dim_8"
+        android:background="@color/gray"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/do_not_have_an_account"
+            android:textColor="@color/white"
+            android:layout_marginEnd="@dimen/dim_2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/loginActivityTvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/here"
+            android:textColor="@color/red100"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
